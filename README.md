@@ -1,3 +1,4 @@
-# jpham8.github.io
-# friedrice.me
-# jpham8.me
+https://jpham8.github.io
+
+Old domains:
+friedrice.me, jpham8.me
