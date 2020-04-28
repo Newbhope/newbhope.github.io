@@ -1,4 +1,4 @@
-https://jpham8.github.io
+https://newbhope.github.io
 
 Old domains:
-friedrice.me, jpham8.me
+friedrice.me, jpham8.me. jpham8.github.io
