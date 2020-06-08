@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-    .fa {
+
+    .fab {
       padding: 18px;
       font-size: 30px;
       width: 30px;
@@ -23,8 +23,9 @@
       border-radius: 50%;
     }
 
-    .fa:hover {
-        opacity: 1.0;
+    .fab:hover {
+        opacity: 1;
+        /* color: rgba(255, 255, 255, 0.5); */
     }
 
     .fa-twitch {
@@ -42,10 +43,18 @@
       color: white;
     }
 
-    .fa-youtube-play {
+    .fa-youtube {
         background: #202020;
         color: red;
     }
+
+    .fa-itch-io {
+        background: #fa5c5c;
+        color: white;
+    }
+
+    .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+    .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     </style>
 
     <!-- Favicon Stuff -->
@@ -69,59 +78,118 @@
             <h2>Aspiring Game Developer</h2>
             <h2>Local Weeb</h2>
             <a href="https://github.com/newbhope" class="button"><small>Follow me on</small> GitHub</a>
-            <!-- <a href="https://github.com/jpham8" class="button"><small>Test</small> Test</a> -->            
         </div>
     </header>
 
     <div id="content-wrapper">
         <div class="inner clearfix">
             <section id="main-content">
-                <!-- Begin Projects -->
+                <big>
+                    Welcome and thanks for checking out my work! Below are projects I've worked on and a short blurb about them. 
+                    
+                    I've tried to record any lessons I learned from each project, and you can see those in the More Details section of each.
+                </big>
+                    <!-- Do I want my email here?-->
+
+                <h2>Games</h2>
                 <h3>
-                    <a id="dangan-dodge"></a><a href="https://github.com/jpham8/dangan-dodge/">Dangan Dodge</a>
+                    <a href="https://kazuru.itch.io/globalgamejam2020diyordie/">DIY or Die</a>
                 </h3>
+                <a href="https://kazuru.itch.io/globalgamejam2020diyordie/">
+                    <img src="https://img.itch.zone/aW1nLzMwNTM2NzUucG5n/original/VfbB4x.png">
+                </a>
+
                 <p>
-                    A solo rebuild of the competitive bullet hell game, Dodge Hell. Has online functionality through UNet with... unfavorable results. Focus is now on refining the game to be fun to play offline.
-                    See below video for an out-dated online play test.
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5W_whgoUFtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                    The first game jam project I worked on. As part of Global Game Jam 2020's theme of repair, I joined a team to make a click and drag game about fixing your car while you're driving it through the desert.
+                </p>
+
+
+                <h3>
+                    <a id="dangan-dodge"></a><a href="https://github.com/newbhope/dangan-dodge/">Dangan Dodge</a>
+                </h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BFJVfOXPSLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                <br>
+                    A 1v1 bullet hell game taking inspirations from fighting games. Basically the project where I got the most of my Unity experience from. Hoping to get it in a releasable state at some point.
                     <br>
-                    Current version has some minor changes which you can see by downloading the newest release <a href=https://github.com/jpham8/dangan-dodge/releases>here</a>.
+                    <br>
+
+                    <a href="https://newbhope.github.io/dangan-dodge/"><u>More Details</u></a>
                 </p>
 
                 <h3>
                     <a id="kim-nen"></a><a href="https://newbhope.itch.io/kimnen">Kim Nen</a>
                 </h3>
+                <img src=https://img.itch.zone/aW1hZ2UvMTgwNTQ5Lzk1NDkwNS5wbmc=/347x500/2dU9FK.png>
+
                 <p>
-                    My first game. An auto biographical visual novel documenting my last year of college.
+                    <br>
+                    My first game! An auto biographical visual novel documenting my last year of college. Made with Ren'py, and I did everything from the "art" to the music and sound effects.
+
                 </p>
 
                 <h3>
                   <a id="dodge-hell"></a><a href="https://fried-rice-productions.github.io/dodge-hell/game">Dodge Hell</a>
                 </h3>
+                <img src=images/bobe.png>
+
                 <p>
-                    Predecessor to Dangan Dodge. Playable web prototype featuring art direction from Eben Arnold kept for posterity.
+                    <br>
+                    Predecessor to Dangan Dodge made together with some college friends. Playable web version featuring art direction from Jamuscles kept for posterity.
                 </p>
 
+
+                <h2>Apps</h2>
                 <h3>
                     <a id="cu-bus"></a><a href="https://play.google.com/store/apps/details?id=com.friedrice.cubus">CU Bus</a>
                 </h3>
+                <img src=https://lh3.googleusercontent.com/9_ka6iKFrrBNy0sn2P7biGulLDqLn7ZC6G0G84d0wRdzQAHbZnSJXoEs-ocmGcnpENcx=w2560-h1248-rw height="500">
                 <p>
                     A bus app for the Champaign-Urbana area.
                     Utilizes the <a href="https://developer.cumtd.com/">CU MTD API</a>
-                    and the Google Maps API to present bus data in a concise and meaningful way.
+                    and the Google Maps API to present bus data in a clean and concise presentation.
                 </p>
 
                 <a href='https://play.google.com/store/apps/details?id=com.friedrice.cubus&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                     <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="35%" />
                 </a>
 
+                <h2>Other Fun Facts</h2>
+                <ul>
+                    <li>I play the violin and uploaded some covers on my Youtube channel <a href=https://www.youtube.com/playlist?list=PLbuj5lpfJkKfklG4nEPZZudMsFelzIQs_>here</a></li>
+                    <br>
+                    <li>I'm currently studying Japanese, and I've passed the JLPT N5 exam. All the Japanese media I've consumed over the years comes in handy for knowing random words</li>
+                    <br>
+
+                    <li>I play most genres of games except probably Racing or Sports games. I tend to gravitate towards JRPGs, but I enjoy tons of other games. Some of my favorite ones:</li>
+                    <ul>
+                        <li>Fate/Grand Order</li>
+                        <li>Fate/stay night</li>
+                        <li>Terraria</li>
+                        <li>Persona 5</li>
+                        <li>Civ 5</li>
+                        <li>Dota 2</li>
+                        <li>Guilty Gear Xrd</li>
+                        <li>Uniclr</li>
+                        <li>Warcraft 3</li>
+                        <li>Halo 3</li>
+                    </ul>
+                    <li>Like any other self respecting weeb, I keep an anime list <a href=https://anilist.co/user/newbhope/animelist>here</a></li>
+                    <br>
+                    <li>You can catch me at anime conventions, PAX, and major fighting game tourneys. I also cosplay as Ritsuka Fujimura, and it makes me super glad seeing the Fate fandom at these gatherings. Unfortunately, COVID-19 has put all of those on hold :/</li>
+                </ul>
+
             </section>
 
             <aside id="sidebar">
-                    <a href="https://www.twitch.tv/newbhope" class="fa fa-twitch"></a>
-                    <a href="https://twitter.com/Newbhope" class="fa fa-twitter"></a>
-                    <a href="https://www.linkedin.com/in/jpham8/" class="fa fa-linkedin"></a>
-                    <a href="https://www.youtube.com/channel/UCJYgA4ofXQ-NaBjY-AtiJoQ/" class="fa fa-youtube-play"></a>
+                    <a href="https://www.twitch.tv/newbhope" class="fab fa-twitch"></a>
+                    <a href="https://twitter.com/Newbhope" class="fab fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/jpham8/" class="fab fa-linkedin"></a>
+                    <a href="https://www.youtube.com/channel/UCJYgA4ofXQ-NaBjY-AtiJoQ/" class="fab fa-youtube"></a>
+                    <a href="https://newbhope.itch.io/" class="fab fa-itch-io"></a>
 
                     <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
                     <p>Google Play and the Google Play logo are trademarks of Google Inc.</p>
